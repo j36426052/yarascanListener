@@ -1,0 +1,13 @@
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "QSnake", email = "jester36883688@gmail.com"},
+]
+dependencies = [
+    "commitizen>=3.5.2",
+]
+requires-python = ">=3.11"
+license = {text = "MIT"}
