@@ -31,12 +31,57 @@ def check_duplicate_id(id):
     return result
 
 # 新增資料到資料庫
-def insert_data(MessageID, Subject, Received,Sender):
+def insert_maildata(MessageID, Subject, Received,Sender):
     conn = create_connection()
     cursor = conn.cursor()
 
     query = "INSERT INTO mail (MessageID, Subject, Received,Sender) VALUES (%s, %s, %s, %s)"
     values = (MessageID, Subject, Received,Sender)
+
+    cursor.execute(query, values)
+    conn.commit()
+
+    print("Data inserted successfully.")
+
+    cursor.close()
+    conn.close()
+
+def insert_attData(MessageID,AttatchmentName,ID):
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    query = "INSERT INTO attatchment (MessageID,AttatchmentName,ID) VALUES (%s, %s,%s)"
+    values = (MessageID,AttatchmentName,ID)
+
+    cursor.execute(query, values)
+    conn.commit()
+
+    print("Data inserted successfully.")
+
+    cursor.close()
+    conn.close()
+
+def updateIsbad(id,value):
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    # 更新isbad
+    update_query = "UPDATE attatchment SET isBad = %s WHERE ID = %s"
+    values = (value, id)
+    cursor.execute(update_query, values)
+    conn.commit()
+
+    print("Data inserted successfully.")
+
+    cursor.close()
+    conn.close()
+
+def insert_scanResult(filename,match):
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    query = "INSERT INTO yara_result (ID,yara) VALUES (%s, %s)"
+    values = (filename,match)
 
     cursor.execute(query, values)
     conn.commit()
