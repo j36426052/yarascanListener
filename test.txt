@@ -1,1 +1,4 @@
-Hello Minio RRRR AAA
+Hello, world!
+This is a sample text file.
+We are going to scan it with a yara rule.
+The secret code is 12345.

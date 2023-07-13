@@ -1,9 +1,11 @@
-key = 'EwB4A8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAWQXMrvFuyw7IceJYhGg4mMVGIvvHQYtAmjy1lf+UJJlNc+58i9CpWIfap3+biQ507mDtntgXOVCoeU+1WO37VbGcEbd6wKogw3lmlISe6tCXd5gIBo6UC7ulYi7stjBesiw2fNbpkfrpQgZ3n5zdefx1PfmiUGoFOJxC6ihtsKKk3Qk9Uzy/0+1j81qjjV2rEQoNbBumtkf7fcvgXsrjrFC5hluq4ETSoGNGVXXqNldp2hSGY/B6H+CWUZg2of+RJ2Ji8W56BAOp1SmtpfNkl6e/PJHxJozenM7jpzxKAYe+7ZXhim/7Ds2BH04GovinC1xklKBk8WFKrifWK1aY4ADZgAACOrqk+ghzPKzSAJYtYF8BbWAFH/B4hldOhKH2uiPK9nPYFxl8nD9aQ3bETpsHYfFHQ0/29DCJp4VJDChFRo/HQThgnTy6DdsPuZjZXWqX4TLL8rKYxnnwHCCwk6qL92mYqYbpK0EEgyGR0cb0EOxQEZ86eLwjuYUdlewCuDE+ju/n03G+y6kH+w22lBFD2BQxZh2e6E/2HdxzH/y1GX9FskdDHTddvZOZiUmY9WLBLNdLfTswDaUkmMQjEPUMhdK9ynGBNjdEDTyguOudInOO90OOjnhkZ3qPb99N9UkRzKmEB8JPogM+/3J6Nh9aaXPH7y/46FW/wkLxCOfKo7zuFHIQmNB5fSRkZqLQvsWg9yyrG2gOCreJsxU2nJTJBZpLgAopFsxP0cUNiSkq3/84P857K5gCNw1ETvY/bqeTn7JDwR+FSwWC4YCfTtStD9R8BHsCU9CWx1siMeN4v0k+JGEYrJOxhn6CoJyhp19dfkv/2iHwif5jGhLiuLgdM+bMgAdXWmOZylurxg27aNB9no2765dh3NTGDupPxHhZIRz9Ekp510MhI6vnCN0gPdFnndvTOTSGN8sDKAYMXbXnRjnJp5zoLHKZfJ7EiZ0xukAKC1+rljZ+6knFnYhZrsliPNONHi6iqbrjKkdoLYwbWL/7kGePPBtssbDUYz9KpZLV7L5CqZS+TELpOc0nN1ik9Gub+8ruH5+iOZbxxA5mrpA1mMwxQgmO7VbaZMDWmFAMGcRFpzNaFdmdhzhBxUTQD3QafnfvTWn9JZ3yuvHZt/vPocC'
+key = 'EwB4A8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAeRR1RrwnzHkWaYtQorXAcP/SKmtuNW0GdXCGIUHIoApGcDNNRKA3BwBPR1iN8tpJSNqkvFA/WCYvmQKW/MvB6yxjuGtPXe2gSwGJPpM8HxsvrjtB2cLHT7fh92UrRSOLFU3bDN2LumZklfuvDLu1XN/Vj6ROXOScSJmpYKiqXCez8NtuCEodFdD6IrSqxrkK/yEcJqBS7ckyAXMtuHrC91Shc6CkJF9zdnAzLwTUKHhi1KmWAY2ZvZjUSLk00sTRkyvox/6GEUi0dT+dbs6qL8ln+5K2c3hPtsTvfcSKn8Ks06yTo7g0mkUcBauk1amsM8xGEhK2t18x4u5NXZU7G4DZgAACBIeY5wz48ElSAKvMvRJnUTua6vmkxgBcIRvbQjvoZPfWUomEggP7Gt15ydBAN3Nfl1lFaB/24DXA5hlJdL7+SZmIM+WS6cvTfCtc2iD7rS64IdrtQlpeQfpE0Pcum8olsHw5AB7XOBA9ot+rFlhIdSYemqx4lRemq2s32D6Y/bcL9FCeGDFN2tyTo3MeU+GPRqnKyPYrew45MfzefocDZPL0Vtt3TbJPC7vOD8g1jEKOcSMUxtZeedRJORbWCANAYrkdPdGFWzv+gvY7SE1dd9KrEUWZK4AWcMaV2M046s7Gg9PM1W0VswBEI695FCkbogbqiP1U7rvCFOKE/GQIuoQIHzqjuVTApmUg6vCJzqRqjg/3o3pIhYZbTsHjfOsLnfcN/mXwuuJ2tuJ77gsBB6+NZakanyEbyqN/k9cARJZn5/YD9khuIj47Dn8Jxv76hmIlKU/F44X4RGXr1mY5m9ySGOcJ1CuJ1BRGpMa2cLhhIJ808kStKb+tWWyYavjHWzmlgDkr949twTwfU1MRkxKJuemmmy3vPuZxnrSphJ8tezDs8VzzXja5aKrWx7lc0hb1yArKP+Sw8odK0+RtDQsdqcSBVLmkmrnwHNW3F6aOH80iJTa03Iws93ktslZXEFg0wJi54lQDZjhANbGMDckFxG1Fk3JhcTRh7+XnsQT4WOcRJTaRAQxrdz3mgPccyjssdlMJZjGOXuCUUjLSJxL6uufxjv+UGyi2953QcSFkKrKNAe6Mf7nAxU1FyvEIg0dj7w1BMH91sXrSNbTartGT4cC'
 import minIO
 import requests
 import json
 import os
 import base64
+import pysql
+from datetime import datetime
 
 access_token = key
 
@@ -19,12 +21,29 @@ params = {
 
 response = requests.get(url, headers=headers, params=params)
 
+#print(response.json())
+
 # 解析回應並印出每封郵件的相關資訊
 for message in response.json()['value']:
     print(f"Subject: {message['subject']}")
     print(f"Received: {message['receivedDateTime']}")
     print(f"From: {message['from']['emailAddress']['address']}")
     print(f"Message ID: {message['id']}")
+
+    MessageID = message['id']
+    Subject = message['subject']
+    # 将接收时间字符串转换为datetime对象
+    received_datetime = datetime.strptime(message['receivedDateTime'], "%Y-%m-%dT%H:%M:%SZ")
+    # 将datetime对象转换为MySQL支持的日期时间格式
+    Received = received_datetime.strftime("%Y-%m-%d %H:%M:%S")
+    Sender = message['from']['emailAddress']['address']
+
+    # TODO: 把id抓下來跟資料庫比對
+    if pysql.check_duplicate_id(MessageID):
+        # 假如有在id那就跳過
+        continue
+    # 假如不在那就加入資料庫並且繼續掃描
+    pysql.insert_data(MessageID, Subject, Received,Sender)
 
     # 獲取郵件的附件
     attachment_url = f"https://graph.microsoft.com/v1.0/me/messages/{message['id']}/attachments"
@@ -35,11 +54,13 @@ for message in response.json()['value']:
         if attachment['@odata.type'] == '#microsoft.graph.fileAttachment':
             # 下載附件
             attachment_content = base64.b64decode(attachment['contentBytes'])
-            path = os.path.join('./fileSave', attachment['name'])
-            with open(path, 'wb') as f:
-               f.write(attachment_content)
+            
+            # path = os.path.join('./fileSave', attachment['name'])
+            # with open(path, 'wb') as f:
+            #     f.write(attachment_content)
+            
             # 把附件放到minIO
-            minIO.uploadFIle(path,attachment['name'])
+            minIO.uploadFile(attachment_content,attachment['name'])
 
 
 

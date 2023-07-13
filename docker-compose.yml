@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin_iii
+      MYSQL_DATABASE: outlookScan
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin_iii
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8088:80
+    environment:
+      PMA_HOST: db
+      PMA_USER: admin
+      PMA_PASSWORD: admin_iii
+
+  nats:
+    image: nats:latest
+    ports:
+      - 4222:4222
+      - 6222:6222
+      - 8222:8222
+  minio:
+    image: quay.io/minio/minio
+    restart: always
+    volumes:
+      - /Users/csti-user/Documents/python/minioTest/minIO/data:/data
+      - /Users/csti-user/Documents/python/minioTest/minIO/config:/root/.minio
+    environment:
+      - MINIO_ROOT_USER=minio
+      - MINIO_ROOT_PASSWORD=minio_iii
+    command: server /data --console-address ":9001"
+    ports:
+      - 9000:9000
+      - 9001:9001
+
+

@@ -1,3 +1,4 @@
 import minIO
-import mailTest
+#import mailTest
 
+minIO.uploadFile(filename='AAAAAtest.txt')
