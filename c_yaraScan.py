@@ -3,7 +3,7 @@ from fastapi import FastAPI, Depends, Body
 from starlette.responses import JSONResponse
 import uvicorn
 import os
-import minIO
+import t_minIO
 
 app = FastAPI()
 
@@ -23,13 +23,13 @@ async def scan(filename: str = Depends(validate_filename)):
     # with open('./'+filename, 'r') as file:
     #     content = file.read()
     # 讀取minIO的資料
-    content = minIO.loadFile(filename)
+    content = t_minIO.loadFile(filename)
     # Scan the file
     matches = rules.match(data=content)
 
     # Clean up the temporary file
     #os.remove(file.filename)
-    minIO.deleteFile(filename)
+    t_minIO.deleteFile(filename)
     if matches:
         return JSONResponse(content={"matches": str(matches)}, status_code=200)
     else:
