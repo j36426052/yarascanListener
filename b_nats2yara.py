@@ -9,7 +9,7 @@ import json
 async def run():
     # 連線到Nats
     nc = NATS()
-    await nc.connect("localhost:4222",name="python-connection")
+    await nc.connect("nats:4222",name="python-connection")
     #print('connect down, waiting for message')
 
     #接收到資料之後要做什麼

@@ -7,7 +7,7 @@ import t_minIO,t_pysql
 
 app = FastAPI()
 
-# TODO:fastAPI規定的，不知道要幹嘛
+# fastAPI規定的，不知道要幹嘛
 def validate_filename(filename: str = Body(..., embed=True)):
     #if not os.path.exists(filename):
     #    raise ValueError(f"The file {filename} does not exist.")
@@ -15,8 +15,8 @@ def validate_filename(filename: str = Body(..., embed=True)):
 
 @app.post("/scan")
 async def scan(filename: str = Depends(validate_filename)):
-    #讀取yara rule TODO:聽說數量大了會讀取很久
-    rules = yara.compile(filepath='./yaraRule/rules.yar')
+    #讀取yara rule
+    rules = yara.compile(filepath='./rules/index.yar')
 
     # 測試的時候讀取本地的地方
     # with open('./'+filename, 'r') as file:
@@ -30,7 +30,7 @@ async def scan(filename: str = Depends(validate_filename)):
     # 把minIO上面的資料刪掉
     t_minIO.deleteFile(filename)
 
-    # 傳送掃描結果 TODO:把結果儲存到資料庫
+    # 傳送掃描結果 把結果儲存到資料庫
     if matches:
         t_pysql.updateIsbad(filename,1)
         for match in matches:
