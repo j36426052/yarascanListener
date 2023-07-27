@@ -1,0 +1,4 @@
+minio>=7.1.15
+yara-python>=4.3.1
+nats-py>=2.3.1
+mysql-connector-python>=8.0.33

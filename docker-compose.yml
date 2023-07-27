@@ -9,6 +9,8 @@ services:
       MYSQL_DATABASE: outlookScan
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin_iii
+    networks:
+      - yara_network    
     volumes:
       - ./mysql:/var/lib/mysql
     ports:
@@ -19,6 +21,8 @@ services:
     restart: always
     depends_on:
       - db
+    networks:
+      - yara_network
     ports:
       - 8088:80
     environment:
@@ -28,10 +32,13 @@ services:
 
   nats:
     image: nats:latest
+    networks:
+      - yara_network    
     ports:
       - 4222:4222
       - 6222:6222
       - 8222:8222
+
   minio:
     image: quay.io/minio/minio
     restart: always
@@ -42,11 +49,19 @@ services:
       - MINIO_ROOT_USER=minio
       - MINIO_ROOT_PASSWORD=minio_iii
     command: server /data --console-address ":9001"
+    networks:
+      - yara_network    
     ports:
       - 9000:9000
       - 9001:9001
-  natlistener:
+  yarascanner:
     build: .
-    image: natlistener:latest
+    image: yarascanner:latest
+    networks:
+      - yara_network
     volumes:
       - ./src:/app
+
+networks:
+  yara_network:
+    driver: bridge
