@@ -45,5 +45,8 @@ services:
     ports:
       - 9000:9000
       - 9001:9001
-
-
+  natlistener:
+    build: .
+    image: natlistener:latest
+    volumes:
+      - ./src:/app
