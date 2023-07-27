@@ -7,12 +7,12 @@ authors = [
     {name = "QSnake", email = "jester36883688@gmail.com"},
 ]
 dependencies = [
-    "commitizen>=3.5.2",
     "minio>=7.1.15",
     "yara-python>=4.3.1",
     "nats-py>=2.3.1",
     "mysql-connector-python>=8.0.33",
     "pyyaml>=6.0.1",
+    "commitizen>=3.5.3",
 ]
 requires-python = ">=3.11"
 license = {text = "MIT"}

@@ -43,8 +43,8 @@ services:
     image: quay.io/minio/minio
     restart: always
     volumes:
-      - /Users/csti-user/Documents/python/minioTest/minIO/data:/data
-      - /Users/csti-user/Documents/python/minioTest/minIO/config:/root/.minio
+      - ./minIO/data:/data
+      - ./minIO/config:/root/.minio
     environment:
       - MINIO_ROOT_USER=minio
       - MINIO_ROOT_PASSWORD=minio_iii

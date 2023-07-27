@@ -27,7 +27,7 @@ summary = "Cross-platform colored terminal text."
 
 [[package]]
 name = "commitizen"
-version = "3.5.2"
+version = "3.5.3"
 requires_python = ">=3.7,<4.0"
 summary = "Python commitizen client tool"
 dependencies = [
@@ -163,7 +163,7 @@ summary = "Python interface for YARA"
 
 [[package]]
 name = "zipp"
-version = "3.16.0"
+version = "3.16.2"
 requires_python = ">=3.8"
 summary = "Backport of pathlib-compatible object wrapper for zip files"
 
@@ -171,7 +171,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 lock_version = "4.2"
 cross_platform = true
 groups = ["default"]
-content_hash = "sha256:c02ac712845346339dd56b80e48e6ae788ab67761ae3fde74dc5c7e976fc42e0"
+content_hash = "sha256:623377bfd137e5fdbadf42e420976aa1731598264de47d52d9b0e96a09b2cb13"
 
 [metadata.files]
 "argcomplete 3.1.1" = [
@@ -263,9 +263,9 @@ content_hash = "sha256:c02ac712845346339dd56b80e48e6ae788ab67761ae3fde74dc5c7e97
     {url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
-"commitizen 3.5.2" = [
-    {url = "https://files.pythonhosted.org/packages/79/56/bf99588f7f05719a2a5811a5fcc568cdd6523ad26439ea1e031efd932f45/commitizen-3.5.2.tar.gz", hash = "sha256:71a9632c6cae9b7b925039a7482daf29a206752aa361dff34f0c37592a0e7693"},
-    {url = "https://files.pythonhosted.org/packages/ac/8b/d0599cd7df644c63f837488216dda8db3fbae676d84696bb87edf022affb/commitizen-3.5.2-py3-none-any.whl", hash = "sha256:7ab91936e18c40ebba5581c4fda10c154b29bdb15e25d27cfa0fabbc99740f2e"},
+"commitizen 3.5.3" = [
+    {url = "https://files.pythonhosted.org/packages/06/c9/2a3450eb2b1611da766fe8a5209eaa873ac6e0de1f23c615dc461364cc3b/commitizen-3.5.3.tar.gz", hash = "sha256:6f5a3536d1cf17580b82ed16643b5754efb1079fcb4de1bc6de8245d8e2cc6a9"},
+    {url = "https://files.pythonhosted.org/packages/4e/63/3ec9977deacf1ee30b4af19e459d753af5d720ed484036ed0cbe421bd20c/commitizen-3.5.3-py3-none-any.whl", hash = "sha256:f5c1290278aa3ee19915dc6a8480f6c4db25c90827e61f70f8fc03b648850029"},
 ]
 "decli 0.6.1" = [
     {url = "https://files.pythonhosted.org/packages/2e/9c/b76485e6120795c8b632707bafb4a9a4a2b75584ca5277e3e175c5d02225/decli-0.6.1.tar.gz", hash = "sha256:ed88ccb947701e8e5509b7945fda56e150e2ac74a69f25d47ac85ef30ab0c0f0"},
@@ -472,7 +472,7 @@ content_hash = "sha256:c02ac712845346339dd56b80e48e6ae788ab67761ae3fde74dc5c7e97
     {url = "https://files.pythonhosted.org/packages/f6/b7/e2889ed089c2e4d7f170391def1c34bc212a3f32ae18a671fcc9a0d93712/yara_python-4.3.1-cp310-cp310-win_amd64.whl", hash = "sha256:ec05d0b7cc46728119d450875382d5386305510b8cfb14bad3627060c9e6f199"},
     {url = "https://files.pythonhosted.org/packages/fd/7c/2d9ff75405990fb49620d662eee46998717ef1332415d1f58256ad2e5335/yara_python-4.3.1-cp310-cp310-win32.whl", hash = "sha256:834d8fe2cdb5cf61d5e505d32c504b62891df5ce5af9f04dbd8c7575c1dbef30"},
 ]
-"zipp 3.16.0" = [
-    {url = "https://files.pythonhosted.org/packages/52/9a/d93b483b9a744e7f71b311ee9bb5a228f6846219ceb5d6dbcb3eddcd1932/zipp-3.16.0.tar.gz", hash = "sha256:1876cb065531855bbe83b6c489dcf69ecc28f1068d8e95959fe8bbc77774c941"},
-    {url = "https://files.pythonhosted.org/packages/ad/be/a6c11f5e0c042fb97e6b567730f55c56b2fe4089304ae66207a54fa49d7e/zipp-3.16.0-py3-none-any.whl", hash = "sha256:5dadc3ad0a1f825fe42ce1bce0f2fc5a13af2e6b2d386af5b0ff295bc0a287d3"},
+"zipp 3.16.2" = [
+    {url = "https://files.pythonhosted.org/packages/8c/08/d3006317aefe25ea79d3b76c9650afabaf6d63d1c8443b236e7405447503/zipp-3.16.2-py3-none-any.whl", hash = "sha256:679e51dd4403591b2d6838a48de3d283f3d188412a9782faadf845f298736ba0"},
+    {url = "https://files.pythonhosted.org/packages/e2/45/f3b987ad5bf9e08095c1ebe6352238be36f25dd106fde424a160061dce6d/zipp-3.16.2.tar.gz", hash = "sha256:ebc15946aa78bd63458992fc81ec3b6f7b1e92d51c35e6de1c3804e73b799147"},
 ]
