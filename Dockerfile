@@ -1,8 +1,11 @@
 # 使用官方的 Python 基礎映像
 FROM python:3.11.4
 
+RUN mkdir /rules
+
 # 複製當前目錄下的所有檔案到容器的 /app 目錄
 COPY ./src /app
+COPY ./rules /rules
 COPY requirements.txt /app
 
 # 設定工作目錄

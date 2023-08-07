@@ -1,11 +1,12 @@
 import mysql.connector
+from yamlReader import getyamlkey
 
 # 建立資料庫連線
 def create_connection():
     connection = mysql.connector.connect(
         host="db",
-        user="admin",
-        password="admin_iii",
+        user=getyamlkey('dbuser'),
+        password=getyamlkey('dbpassword'),
         database="outlookScan"
     )
     return connection
@@ -66,7 +67,8 @@ def updateIsbad(id,value):
     cursor = conn.cursor()
 
     # 更新isbad
-    update_query = "UPDATE attatchment SET isBad = %s WHERE ID = %s"
+    #update_query = "UPDATE attatchment SET isBad = %s WHERE ID = %s"
+    update_query = "UPDATE attatchmentTask SET isBad = %s WHERE ID = %s"
     values = (value, id)
     cursor.execute(update_query, values)
     conn.commit()

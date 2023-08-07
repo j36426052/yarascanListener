@@ -5,4 +5,4 @@ with open('config.yaml', 'r') as config_file:
     config = yaml.safe_load(config_file)
 
 def getyamlkey(keyName):
-    return yaml.safe.load(keyName)
+    return config[keyName]
