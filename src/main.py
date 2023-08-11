@@ -50,7 +50,8 @@ def scan(filename: str):
     if matches:
         t_pysql.updateIsbad(filename,1)
         for match in matches:
-            t_pysql.insert_scanResult(filename,str(match))
+            if not t_pysql.check_duplicate_Attid(filename,str(match)):
+                t_pysql.insert_scanResult(filename,str(match))
     else:
         t_pysql.updateIsbad(filename,0)
 

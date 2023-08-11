@@ -62,6 +62,27 @@ def insert_attData(MessageID,AttatchmentName,ID):
     cursor.close()
     conn.close()
 
+
+# 檢查是否有重複的 ID
+def check_duplicate_Attid(id,yara):
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    query = "SELECT ID,yara FROM yara_result WHERE ID = %s AND yara = %s"
+    cursor.execute(query, (id,yara))
+
+    result = cursor.fetchone()
+    if result:
+        print("ID already exists.")
+        result = True
+    else:
+        print("ID does not exist.")
+        result = False
+    # SELECT ID,yara FROM yara_result WHERE ID = %s, yara = %s
+    cursor.close()
+    conn.close()
+    return result
+
 def updateIsbad(id,value):
     conn = create_connection()
     cursor = conn.cursor()
