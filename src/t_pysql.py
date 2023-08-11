@@ -113,3 +113,33 @@ def insert_scanResult(filename,match):
 
     cursor.close()
     conn.close()
+
+def updateTaskStatus(taskID,status):
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    # 更新isbad
+    update_query = "UPDATE task SET status = %s WHERE ID = %s"
+    values = (status, taskID)
+    cursor.execute(update_query, values)
+    conn.commit()
+
+    print("update task"+taskID+" to " + status)
+
+    cursor.close()
+    conn.close()
+
+def insert_taskError(taskID,error):
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    query = "INSERT INTO taskError (taskID,Error) VALUES (%s, %s)"
+    values = (taskID,error)
+
+    cursor.execute(query, values)
+    conn.commit()
+
+    print("Error log")
+
+    cursor.close()
+    conn.close()
